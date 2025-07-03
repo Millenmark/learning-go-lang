@@ -43,5 +43,8 @@ func main() {
 	n := r.Intn(5) + 1
 	stars := strings.Repeat("*", n)
 	fmt.Println(stars)
+
+	Debug, LogLevel, startUpTime := false, "info", time.Now()
+	fmt.Println(Debug, LogLevel, startUpTime)
 }
 
