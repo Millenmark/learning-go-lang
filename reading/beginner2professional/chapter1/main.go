@@ -4,7 +4,10 @@ import (
 	"errors"
 	"fmt"
 	"log"
+	"math/rand"
 	"strconv"
+	"strings"
+	"time"
 )
 
 func hello(helloList []string, index int) (string, error) {
@@ -22,7 +25,7 @@ func main() {
 		"omki",
 	}
 
-	msg, err := hello(helloList, 5)
+	msg, err := hello(helloList, 1)
 	if err != nil {
 		log.Fatal(err)
 	} else {
@@ -32,5 +35,13 @@ func main() {
 	fmt.Println(len(helloList))
 	fmt.Println(helloList[len(helloList)-1])
 	// fmt.Println(helloList[len(helloList)]) // This will cause a panic
+
+	src := rand.NewSource(time.Now().UnixNano())
+	r := rand.New(src)
+
+	// Use the new rand instance
+	n := r.Intn(5) + 1
+	stars := strings.Repeat("*", n)
+	fmt.Println(stars)
 }
 
