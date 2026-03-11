@@ -3,6 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	a, b := 124.45, 3.45
-	fmt.Println(a, b)
+	a := true
+	b := false
+	fmt.Println("a:", a, "b:", b)
+	c := a && b
+	fmt.Println("c:", c)
+	d := a || b
+	fmt.Println("d:", d)
+	fmt.Printf("a: %T\n", a)
 }
