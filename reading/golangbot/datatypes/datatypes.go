@@ -29,6 +29,7 @@ func main() {
 
 	// constant
 	// const ab = math.Sqrt(4) !this will throw an error, const cannot be assigned a value after declaration
+	// !The value of a constant should be known at compile time
 	// fmt.Println(ab)
 
 }
