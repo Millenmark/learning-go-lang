@@ -17,4 +17,18 @@ func main() {
 	e := c * d
 	fmt.Printf("type of e is %T, size of e is %d bytes\n", e, unsafe.Sizeof(e))
 
+	// Complex Data Type
+
+	f := 5 + 3i
+	fmt.Println("This is the value of f:", f)
+	fmt.Printf("The type of f is %T\n", f)
+
+	c1 := complex(5, 67)
+	fmt.Println("The value of c1 is: ", c1)
+	fmt.Printf("type of c1 is %T, size of c1 is %d bytes\n", c1, unsafe.Sizeof(c1))
+
+	// constant
+	// const ab = math.Sqrt(4) !this will throw an error, const cannot be assigned a value after declaration
+	// fmt.Println(ab)
+
 }
