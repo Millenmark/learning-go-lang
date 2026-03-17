@@ -20,5 +20,7 @@ func main() {
 		return width * height, width + height
 	}
 
-	fmt.Println(rectProps(4, 5))
+	area, perimeter := rectProps(4, 5)
+
+	fmt.Println("the area is" + " " + fmt.Sprintf("%f", area) + " " + fmt.Sprintf("%f", perimeter))
 }
